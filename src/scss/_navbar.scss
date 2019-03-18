@@ -1,0 +1,36 @@
+#main-navbar {
+    margin: 0;
+    background-color: black;
+    color: rgb(223, 223, 223);
+    width: 100%;
+    z-index: 27;
+    position: fixed;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    justify-content: baseline;
+}
+
+.navbar__wrap {
+
+}
+
+.navbar__menu {
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        display: block;
+        ::after {
+            clear: both;
+        }
+        ::before, ::after {
+            content: " ";
+            display: table;
+        }
+    }
+}

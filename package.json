@@ -1,24 +1,28 @@
 {
-  "name": "flexbox-playground",
+  "name": "scss-gulp-boilerplate",
   "version": "1.0.0",
-  "description": "Gulp setup for static websites",
+  "description": "Rapid development boilerplate for sass projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp watch"
+    "start": "node_modules/gulp/bin/gulp.js watch",
+    "serve": "node_modules/gulp/bin/gulp.js dev",
+    "min": "node_modules/gulp/bin/gulp.js min",
+    "minify-css": "node_modules/gulp/bin/gulp.js minify-css",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Arrrni",
-  "license": "GNU",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:arrrni/flexbox-playground.git"
-  },
+  "author": "Vikrant Negi",
+  "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.3.1",
-    "browser-sync": "^2.26.3",
-    "gulp": "^3",
-    "gulp-cli": "^2.0.1",
-    "gulp-sass": "^3",
-    "node-sass": "^4.11.0"
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-rename": "^1.2.2"
   }
 }

@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5 ,h6 {
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   margin: 0 0 $margins 0;
+  color: $headings-color;
 
   a {
     color: inherit;

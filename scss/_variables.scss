@@ -3,6 +3,15 @@
 *
 * All variables and most of the configuration is defined on this page. */
 
+//== Paths Paths
+//
+//## Fonts and imaage paths
+$font-path-url: "../fonts";
+$img-path-url: "../imgs";
+
+@include font-face(Domine, $font-path-url + "/Domine/Domine-Regular");
+@include font-face(Lato, $font-path-url + "/Lato/Lato-Regular");
+
 /*== Colors*/
 /**/
 /*## Gray and brand colors for use across theme.*/
@@ -24,7 +33,7 @@ $brand-danger : #d9534f;
 /*** Background color for `<body>`.*/
 $body-bg         : #fff;
 /*** Global text color on `<body>`.*/
-$text-color      : $gray-base;
+$text-color      : $black;
 /*** Global textual link color.*/
 $link-color      : $primary-color;
 /*** Link hover color set via `darken()` function.*/
@@ -34,18 +43,10 @@ $link-hover-decoration: underline !default;
 
 
 
-//== Paths Paths
-//
-//## Fonts and imaage paths
-$font-path-url: "../fonts";
-$img-path-url: "../imgs";
-
-
-
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-$font-family-primary  : 'Avenir', sans-serif;
+$font-family-primary  : 'Lato', sans-serif;
 $font-family-secondary: 'Georgia', serif;
 $font-size-base       : 14px;
 $line-height-base     : 1.428571429; /* 20/14*/
@@ -59,10 +60,10 @@ $font-size-h5         : 1.4rem;
 $font-size-h6         : 1.2rem;
 
 /*** By default, this inherits from the `<body>`.*/
-$headings-font-family: inherit !default;
+$headings-font-family: 'Domine';
 $headings-font-weight: 900 !default;
 $headings-line-height: 1.1 !default;
-$headings-color      : inherit !default;
+$headings-color      : #212f4f;
 
 /* spacing */
 $padding        : 2rem;

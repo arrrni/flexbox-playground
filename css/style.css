@@ -487,7 +487,7 @@ html {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (max-width: 400px) {
   html {
     font-size: 10px;
   }
@@ -517,7 +517,22 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f0f0f0), color-stop(#FFE300), to(#f0f0f0));
+  background-image: -o-linear-gradient(left, #f0f0f0, #FFE300, #f0f0f0);
+  background-image: linear-gradient(to right, #f0f0f0, #FFE300, #f0f0f0);
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   line-height: 1.1;
@@ -525,33 +540,44 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
   color: inherit;
   text-decoration: none;
   font-weight: inherit;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 3.6rem;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 3rem;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 2.4rem;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.8rem;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.4rem;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1.2rem;
 }
 
@@ -712,10 +738,73 @@ input[type="checkbox"] {
   line-height: normal;
 }
 
-/* Fonts
+/* Navigation
 * ===============
 *
-* Place all your font declarations here */
+*/
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-right: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.navbar__menu-item {
+  margin-left: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container-parent {
   display: -webkit-box;
   display: -ms-flexbox;

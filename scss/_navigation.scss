@@ -1,4 +1,32 @@
-/* Fonts
+/* Navigation
 * ===============
 *
-* Place all your font declarations here */
+*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5vw;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+    &-item {
+      margin-left: 5vw;
+      display: flex;
+    }
+  }
+}

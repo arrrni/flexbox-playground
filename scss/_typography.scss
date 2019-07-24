@@ -7,7 +7,7 @@ html {
   font-size: 14px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-sizing: border-box;
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media only screen and (max-width: 400px) {
     font-size: 10px;
   }
 }
@@ -27,14 +27,26 @@ body {
   color: $text-color;
   line-height: $line-height-base;
   background-color: $body-bg;
-  @media screen and (min-width: 481px) and (max-width: 767px){
+  @media screen and (min-width: 481px) and (max-width: 767px) {
     font-size: 1rem;
   }
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, $brand-theme-yellow, #f0f0f0);
+  margin-left: 25px;
+  margin-right: 25px;
+}
 
 //Headings
-h1, h2, h3, h4, h5 ,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
@@ -48,14 +60,30 @@ h1, h2, h3, h4, h5 ,h6 {
   }
 }
 
-h1, .h1 { font-size: $font-size-h1; }
-h2, .h2 { font-size: $font-size-h2; }
-h3, .h3 { font-size: $font-size-h3; }
-h4, .h4 { font-size: $font-size-h4; }
-h5, .h5 { font-size: $font-size-h5; }
-h6, .h6 { font-size: $font-size-h6; }
-
-
+h1,
+.h1 {
+  font-size: $font-size-h1;
+}
+h2,
+.h2 {
+  font-size: $font-size-h2;
+}
+h3,
+.h3 {
+  font-size: $font-size-h3;
+}
+h4,
+.h4 {
+  font-size: $font-size-h4;
+}
+h5,
+.h5 {
+  font-size: $font-size-h5;
+}
+h6,
+.h6 {
+  font-size: $font-size-h6;
+}
 
 // Links
 a {
@@ -68,7 +96,6 @@ a {
     text-decoration: $link-hover-decoration;
   }
 }
-
 
 // Figures
 //

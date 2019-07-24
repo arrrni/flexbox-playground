@@ -9,8 +9,9 @@
 $font-path-url: "../fonts";
 $img-path-url: "../imgs";
 
-@include font-face(Domine, $font-path-url + "/Domine/Domine-Regular");
-@include font-face(Lato, $font-path-url + "/Lato/Lato-Regular");
+@include font-face(Raleway, $font-path-url + "/Raleway/Raleway-ExtraBold");
+@include font-face('IBM Plex Sans', $font-path-url + "/IBM_Plex_Sans/IBMPlexSans-Regular");
+@include font-face('IBM Plex Sans Light', $font-path-url + "/IBM_Plex_Sans/IBMPlexSans-Light");
 
 /*== Colors*/
 /**/
@@ -24,6 +25,13 @@ $brand-success: #5cb85c;
 $brand-info   : #5bc0de;
 $brand-warning: #f0ad4e;
 $brand-danger : #d9534f;
+
+/*== Custom colors */
+$brand-theme-navy-blue: #12015B;
+$brand-theme-purple: #3E0054;
+$brand-theme-blue: #3100FF;
+$brand-theme-brown: #410000;
+$brand-theme-yellow: #FFE300;
 
 
 /*== Scaffolding*/
@@ -46,9 +54,9 @@ $link-hover-decoration: underline !default;
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-$font-family-primary  : 'Lato', sans-serif;
+$font-family-primary  : 'IBM Plex Sans', sans-serif;
 $font-family-secondary: 'Georgia', serif;
-$font-size-base       : 14px;
+$font-size-base       : 16px;
 $line-height-base     : 1.428571429; /* 20/14*/
 $font-weight-base     : 400;
 
@@ -60,10 +68,11 @@ $font-size-h5         : 1.4rem;
 $font-size-h6         : 1.2rem;
 
 /*** By default, this inherits from the `<body>`.*/
-$headings-font-family: 'Domine';
+$headings-font-family: 'Raleway', sans-serif;
 $headings-font-weight: 900 !default;
 $headings-line-height: 1.1 !default;
-$headings-color      : #212f4f;
+// $headings-color      : #212f4f;
+$headings-color      : $brand-theme-navy-blue;
 
 /* spacing */
 $padding        : 2rem;
@@ -71,7 +80,9 @@ $margins        : 1.5rem;
 $content-padding: 60px 0;
 $content-padding-mobile: 30px 0;
 
-
+$small-font-family: 'IBM Plex Sans Light', sans-serif;
+$small-font-weight: 100 !default;
+$small-line-height: 1 !default;
 
 /*== Buttons*/
 /**/

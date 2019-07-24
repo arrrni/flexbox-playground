@@ -2,3 +2,7 @@
 * ===============
 *
 * Place all your font declarations here */
+
+@include font-face(Raleway, $font-path-url + "/Raleway/Raleway-ExtraBold", null, null, ttf);
+@include font-face('Fira Sans', $font-path-url + "/Fira_Sans/FiraSans-Regular", null, null, ttf);
+@include font-face('Fira Sans Light', $font-path-url + "/Fira_Sans/FiraSans-Light", null, null, ttf);

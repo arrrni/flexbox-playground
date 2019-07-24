@@ -9,16 +9,13 @@
 $font-path-url: "../fonts";
 $img-path-url: "../imgs";
 
-@include font-face(Raleway, $font-path-url + "/Raleway/Raleway-ExtraBold");
-@include font-face('IBM Plex Sans', $font-path-url + "/IBM_Plex_Sans/IBMPlexSans-Regular");
-@include font-face('IBM Plex Sans Light', $font-path-url + "/IBM_Plex_Sans/IBMPlexSans-Light");
-
 /*== Colors*/
 /**/
 /*## Gray and brand colors for use across theme.*/
 $orange       : #f47820;
 $gray-base    : #4c4c4d;
 $black        : #000;
+$white        : #fff;
 
 $primary-color: $orange;
 $brand-success: #5cb85c;
@@ -39,9 +36,9 @@ $brand-theme-yellow: #FFE300;
 /*## Settings for some of the most global styles.*/
 
 /*** Background color for `<body>`.*/
-$body-bg         : #fff;
+$body-bg         : $brand-theme-navy-blue;
 /*** Global text color on `<body>`.*/
-$text-color      : $black;
+$text-color      : $white;
 /*** Global textual link color.*/
 $link-color      : $primary-color;
 /*** Link hover color set via `darken()` function.*/
@@ -54,7 +51,7 @@ $link-hover-decoration: underline !default;
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-$font-family-primary  : 'IBM Plex Sans', sans-serif;
+$font-family-primary  : 'Fira Sans', sans-serif;
 $font-family-secondary: 'Georgia', serif;
 $font-size-base       : 16px;
 $line-height-base     : 1.428571429; /* 20/14*/
@@ -71,8 +68,7 @@ $font-size-h6         : 1.2rem;
 $headings-font-family: 'Raleway', sans-serif;
 $headings-font-weight: 900 !default;
 $headings-line-height: 1.1 !default;
-// $headings-color      : #212f4f;
-$headings-color      : $brand-theme-navy-blue;
+$headings-color      : $white;
 
 /* spacing */
 $padding        : 2rem;
@@ -80,9 +76,10 @@ $margins        : 1.5rem;
 $content-padding: 60px 0;
 $content-padding-mobile: 30px 0;
 
-$small-font-family: 'IBM Plex Sans Light', sans-serif;
+$small-font-family: 'Fira Sans Light', sans-serif;
 $small-font-weight: 100 !default;
 $small-line-height: 1 !default;
+$small-font-size: 0.8rem;
 
 /*== Buttons*/
 /**/
@@ -103,14 +100,12 @@ $btn-theme-border      : darken($btn-theme-bg, 5%);
 $btn-border-radius-base : 0 !default;
 
 
-
 //== Grid system
 //
 //## Define your custom responsive grid.
 
 //** Padding between columns. Gets divided in half for the left and right.
 $gutter: 30px;
-
 
 
 /*== Overlays*/

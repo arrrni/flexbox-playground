@@ -32,6 +32,13 @@
   text-align: justify;
 }
 
+.text-small {
+  font-family: $small-font-family !important;
+  font-weight: $small-font-weight;
+  line-height: $small-line-height;
+  font-size: $small-font-size;
+}
+
 .error {
   border: 3px solid $brand-danger !important;
 }

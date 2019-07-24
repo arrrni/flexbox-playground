@@ -1,11 +1,9 @@
 @charset 'UTF-8';
 
-@import "mixins";
-
 @import "variables";
 
-@import 'base/fonts';
 @import 'base/mixins';
+@import 'base/fonts';
 
 // Vendors
 @import 'vendor/normalize';

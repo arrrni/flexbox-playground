@@ -27,11 +27,6 @@
 *
 * Place all your font declarations here */
 @font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway/Raleway-ExtraBold.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Fira Sans";
   src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
 }
@@ -39,6 +34,11 @@
 @font-face {
   font-family: "Fira Sans Light";
   src: url("../fonts/Fira_Sans/FiraSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans Black";
+  src: url("../fonts/Fira_Sans/FiraSans-Black.ttf") format("truetype");
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -503,12 +503,12 @@ html {
 }
 
 body {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
   line-height: 1.42857;
-  background-color: #12015B;
+  background-color: #12015b;
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -520,9 +520,9 @@ body {
 hr {
   border: 0;
   height: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f0f0f0), color-stop(#FFE300), to(#f0f0f0));
-  background-image: -o-linear-gradient(left, #f0f0f0, #FFE300, #f0f0f0);
-  background-image: linear-gradient(to right, #f0f0f0, #FFE300, #f0f0f0);
+  background-image: -webkit-gradient(linear, left top, right top, from(#f0f0f0), color-stop(#ffe300), to(#f0f0f0));
+  background-image: -o-linear-gradient(left, #f0f0f0, #ffe300, #f0f0f0);
+  background-image: linear-gradient(to right, #f0f0f0, #ffe300, #f0f0f0);
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -533,7 +533,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Fira Sans Black", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 900;
   line-height: 1.1;
   margin: 0 0 1.5rem 0;
@@ -647,7 +647,7 @@ figure {
 }
 
 .text-small {
-  font-family: "Fira Sans Light", sans-serif !important;
+  font-family: "Fira Sans Light", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif !important;
   font-weight: 100;
   line-height: 1;
   font-size: 0.8rem;
@@ -691,7 +691,7 @@ figure {
   position: relative;
   border-radius: 0;
   padding: 6px 12px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: normal;
 }
@@ -776,6 +776,31 @@ input[type="checkbox"] {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+}
+
+.navbar__hamburger {
+  display: inline-block;
+  z-index: 2;
+}
+
+.navbar__hamburger:hover {
+  display: block;
+}
+
+.navbar__hamburger .bar1, .navbar__hamburger .bar2, .navbar__hamburger .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar__hamburger {
+    display: none;
   }
 }
 
@@ -872,8 +897,8 @@ input[type="checkbox"] {
 }
 
 .header-container {
-  color: #3E0054;
-  background-color: #FFE300;
+  color: #3e0054;
+  background-color: #ffe300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
